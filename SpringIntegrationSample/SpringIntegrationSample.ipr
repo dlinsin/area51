@@ -67,6 +67,17 @@
       <entry name="?*.tld" />
     </wildcardResourcePatterns>
   </component>
+  <component name="CopyrightManager" default="apache">
+    <copyright>
+      <option name="notice" value="Copyright 2009 David Linsin&#10;&#10;   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&#10;   you may not use this file except in compliance with the License.&#10;   You may obtain a copy of the License at&#10;&#10;       http://www.apache.org/licenses/LICENSE-2.0&#10;&#10;   Unless required by applicable law or agreed to in writing, software&#10;   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&#10;   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#10;   See the License for the specific language governing permissions and&#10;   limitations under the License." />
+      <option name="keyword" value="Copyright" />
+      <option name="myName" value="apache" />
+      <option name="myLocal" value="true" />
+    </copyright>
+    <module2copyright>
+      <element module="All" copyright="apache" />
+    </module2copyright>
+  </component>
   <component name="DependenciesAnalyzeManager">
     <option name="myForwardDirection" value="false" />
   </component>
@@ -291,6 +302,9 @@
     <option name="projectName" value="SpringIntegrationSample" />
   </component>
   <component name="ProjectFileVersion" converted="true" />
+  <component name="ProjectKey">
+    <option name="state" value="project:///Users/dlinsin/Development/area51/SpringIntegrationSample/SpringIntegrationSample.ipr" />
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringIntegrationSample.iml" filepath="$PROJECT_DIR$/SpringIntegrationSample.iml" />
@@ -328,7 +342,7 @@
     <option name="myVersion" value="124" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="" vcs="Git" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
