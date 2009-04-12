@@ -28,6 +28,10 @@
         <servlet-name>helloworld</servlet-name>
         <servlet-class>de.linsin.sample.gae.HelloWorld</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>reset</servlet-name>
+        <servlet-class>de.linsin.sample.gae.Reset</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GroovyServlet</servlet-name>
         <url-pattern>*.groovy</url-pattern>
@@ -35,5 +39,9 @@
     <servlet-mapping>
         <servlet-name>helloworld</servlet-name>
         <url-pattern>/helloworld</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>reset</servlet-name>
+        <url-pattern>/reset</url-pattern>
     </servlet-mapping>
 </web-app>
