@@ -13,11 +13,17 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-html.html {
-    head {
-        title "Hello"
-    }
-    body {
-        p "Hello Groovy World!"
-    }
+import javax.persistence.*
+import java.util.List
+import de.linsin.sample.gae.domain.User 
+import de.linsin.sample.gae.EMF 
+
+EntityManager em = EMF.getInstance().createEntityManager()
+
+Query query = em.createQuery("SELECT u FROM " + User.class.getName() + " u")
+List<User> users = query.getResultList()
+
+for (User user : users) {
+  out.println(user.getName() + " " + user.getLastname() + "<br/>")
 }
+em.close();

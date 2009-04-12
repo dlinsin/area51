@@ -15,14 +15,9 @@
  */
 package de.linsin.sample.gae;
 
-import javax.servlet.http.HttpServlet;
-
-
 import de.linsin.sample.gae.domain.User;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -32,52 +27,51 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Dummy entity
+ * Just take input in post method and save it
  *
  * @author David Linsin
  * @version 0.0.1
  * @since 0.0.1
  */
 public class HelloWorld extends HttpServlet {
-    private static final EntityManagerFactory emfInstance =
-        Persistence.createEntityManagerFactory("transactions-optional");
-    
-    @Override
-    public void init() throws ServletException {
-        super.init();
-        EntityManager em = null;
-        try {
-            em = emfInstance.createEntityManager();
-            em.persist(new User("David", "Linsin"));
-        } catch(Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                em.close();
-            } catch (Exception e) {/** IGNORE */}
-        }
-    }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        String name = (String) request.getParameter("uname");
+        if (name != null && name.length() != 0) {
+            EntityManager em = null;
+            try {
+                em = EMF.getInstance().createEntityManager();
+                em.persist(new User(name));
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    em.close();
+                } catch (Exception e) {/** IGNORE */}
+            }
+        } else {
+            name = "John Doe";
+        }
+        request.setAttribute("name", name);
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/plain");
-        response.getWriter().println("Hello, world!");
+        response.getWriter().println("Visitors were: ");
         EntityManager em = null;
         List<User> users;
         try {
-            em = emfInstance.createEntityManager();
+            em = EMF.getInstance().createEntityManager();
 
             Query query = em.createQuery("SELECT u FROM " + User.class.getName() + " u");
             users = query.getResultList();
 
             for (User user : users) {
-                response.getWriter().println("my name is " + user.getName() + " " + user.getLastname());
+                response.getWriter().println(user.getName() + " " + user.getLastname());
             }
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {

@@ -44,6 +44,11 @@ public class User {
         lastname = argLastname;
     }
 
+    public User(String argName) {
+        name = argName;
+        lastname = null;
+    }
+
     public Long getId() {
         return id;
     }

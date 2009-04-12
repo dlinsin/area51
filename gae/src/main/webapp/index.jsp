@@ -16,6 +16,14 @@
 
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2>Hello <%=request.getAttribute("name")%></h2>
+
+<form action="helloworld" method="post">
+    Enter your name: <input type="text" name="uname">
+    <input type="submit">
+</form>
+
+<a href="/HelloWorld.groovy">Check names with Groovy</a><br/>
+<a href="/helloworld">Check names with Servlet</a>
 </body>
 </html>
