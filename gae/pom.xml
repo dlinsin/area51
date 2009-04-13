@@ -21,7 +21,7 @@
     <artifactId>gae</artifactId>
     <packaging>war</packaging>
     <version>0.0.1</version>
-    <name>gae Maven Webapp</name>
+    <name>GAE Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
