@@ -72,7 +72,6 @@
     <orderEntry type="library" name="AppEngine" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.datanucleus:datanucleus-core:1.1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.transaction:transaction-api:1.1" level="project" />
-    <orderEntry type="library" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.datanucleus:datanucleus-jpa:1.1.0" level="project" />
