@@ -318,7 +318,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gae.iml" filepath="$PROJECT_DIR$/gae.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../area51/gae/gae.iml" filepath="$PROJECT_DIR$/../area51/gae/gae.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
