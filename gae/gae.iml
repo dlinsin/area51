@@ -17,6 +17,26 @@
           <setting name="EXCLUDE_EXPLODED_DIRECTORY" value="true" />
         </building>
         <packaging>
+          <containerElement type="library" name="Maven: org.codehaus.groovy:groovy-all:1.6.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: junit:junit:3.8.2" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.apache.ant:ant:1.7.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.apache.ant:ant-launcher:1.7.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: jline:jline:0.9.94" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
           <containerElement type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
@@ -26,6 +46,18 @@
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
           <containerElement type="library" name="Maven: org.datanucleus:datanucleus-jpa:1.1.0" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.datanucleus:datanucleus-core:1.1.2" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: javax.transaction:transaction-api:1.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: javax.jdo:jdo2-api:2.3-SNAPSHOT" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -70,11 +102,17 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="AppEngine" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.datanucleus:datanucleus-core:1.1.0" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.transaction:transaction-api:1.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.codehaus.groovy:groovy-all:1.6.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: junit:junit:3.8.2" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.apache.ant:ant:1.7.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.apache.ant:ant-launcher:1.7.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.datanucleus:datanucleus-jpa:1.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.datanucleus:datanucleus-core:1.1.2" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.transaction:transaction-api:1.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.jdo:jdo2-api:2.3-SNAPSHOT" level="project" />
   </component>
 </module>
 

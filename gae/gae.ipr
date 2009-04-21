@@ -432,6 +432,94 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-jpa/1.1.0/datanucleus-jpa-1.1.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.codehaus.groovy:groovy-all:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/1.6.1/groovy-all-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/1.6.1/groovy-all-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/1.6.1/groovy-all-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:3.8.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.ant:ant:1.7.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant/1.7.1/ant-1.7.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant/1.7.1/ant-1.7.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant/1.7.1/ant-1.7.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.ant:ant-launcher:1.7.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jline:jline:0.9.94">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jline/jline/0.9.94/jline-0.9.94.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jline/jline/0.9.94/jline-0.9.94-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jline/jline/0.9.94/jline-0.9.94-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.transaction:transaction-api:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.jdo:jdo2-api:2.3-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-SNAPSHOT/jdo2-api-2.3-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-SNAPSHOT/jdo2-api-2.3-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-SNAPSHOT/jdo2-api-2.3-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.datanucleus:datanucleus-core:1.1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.2/datanucleus-core-1.1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.2/datanucleus-core-1.1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.2/datanucleus-core-1.1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
   </component>
   <UsedPathMacros>
     <macro name="MAVEN_REPOSITORY" description="Maven Local Repostiry" />
