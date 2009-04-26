@@ -24,8 +24,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.powermock.reflect.Whitebox;
 
-import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -55,19 +55,7 @@ public class ContractTest {
     @Test
     public void test_Calculate_Quote() throws Exception {
         Contract classUnderTest = new Contract(1L);
-        Method calcMethod = getMethodOfClass(Contract.class, "calculateQuote");
-        BigDecimal quote = (BigDecimal) calcMethod.invoke(classUnderTest, new DateMidnight(1982, 4, 27));
+        BigDecimal quote = (BigDecimal) Whitebox.invokeMethod(classUnderTest, "calculateQuote", new DateMidnight(1982, 4, 27));
         assertEquals(new BigDecimal("7.79"), quote.setScale(2, RoundingMode.FLOOR));
-    }
-
-    private Method getMethodOfClass(Class<?> argClass, String argMethodName) {
-        Method[] methods = argClass.getDeclaredMethods();
-        for (Method method : methods) {
-            if (method.getName().equals(argMethodName)) {
-                method.setAccessible(true);
-                return method;
-            }
-        }
-        throw new NoSuchMethodError("couldn't find " + argMethodName + " on class " + argClass);
     }
 }

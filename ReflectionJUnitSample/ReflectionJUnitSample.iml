@@ -15,6 +15,10 @@
     <orderEntry type="library" name="Maven: org.easymock:easymockclassextension:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.easymock:easymock:2.4" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib-nodep:2.1_3" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.powermock:powermock-core:1.2" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.powermock.reflect:powermock-reflect:1.2" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.objenesis:objenesis:1.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javassist:javassist:3.9.0.GA" level="project" />
   </component>
 </module>
 
