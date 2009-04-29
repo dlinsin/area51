@@ -56,6 +56,6 @@ public class ContractTest {
     public void test_Calculate_Quote() throws Exception {
         Contract classUnderTest = new Contract(1L);
         BigDecimal quote = (BigDecimal) Whitebox.invokeMethod(classUnderTest, "calculateQuote", new DateMidnight(1982, 4, 27));
-        assertEquals(new BigDecimal("7.79"), quote.setScale(2, RoundingMode.FLOOR));
+        assertEquals(new BigDecimal("8.09"), quote.setScale(2, RoundingMode.FLOOR));
     }
 }
