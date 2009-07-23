@@ -391,14 +391,6 @@
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="libraryTable">
-    <library name="AppEngine">
-      <CLASSES>
-        <root url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-      <jarDirectory url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" recursive="false" />
-    </library>
     <library name="Maven: javax.servlet:servlet-api:2.5">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
@@ -430,6 +422,72 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-jpa/1.1.0/datanucleus-jpa-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.jdo:jdo2-api:2.3-ea">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-ea/jdo2-api-2.3-ea.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-ea/jdo2-api-2.3-ea-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-ea/jdo2-api-2.3-ea-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.transaction:transaction-api:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.datanucleus:datanucleus-core:1.1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.0/datanucleus-core-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.0/datanucleus-core-1.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.0/datanucleus-core-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.appengine.orm:datanucleus-appengine:1.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/appengine/orm/datanucleus-appengine/1.0.1/datanucleus-appengine-1.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/appengine/orm/datanucleus-appengine/1.0.1/datanucleus-appengine-1.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/appengine/orm/datanucleus-appengine/1.0.1/datanucleus-appengine-1.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.2.2/appengine-api-1.0-sdk-1.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.2.2/appengine-api-1.0-sdk-1.2.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.2.2/appengine-api-1.0-sdk-1.2.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.codehaus.groovy:groovy-all:1.6.1">
@@ -485,39 +543,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/jline/jline/0.9.94/jline-0.9.94-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: javax.transaction:transaction-api:1.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: javax.jdo:jdo2-api:2.3-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-SNAPSHOT/jdo2-api-2.3-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-SNAPSHOT/jdo2-api-2.3-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-SNAPSHOT/jdo2-api-2.3-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.datanucleus:datanucleus-core:1.1.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.2/datanucleus-core-1.1.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.2/datanucleus-core-1.1.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.2/datanucleus-core-1.1.2-sources.jar!/" />
       </SOURCES>
     </library>
   </component>
