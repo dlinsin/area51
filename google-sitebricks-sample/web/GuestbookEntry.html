@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Entry #${entry.id}</title>
+</head>
+<body>
+    <p>${entry.name} wrote on ${entry.date}</p>
+    <p>${entry.text}</p>
+    <form action="/guestbook" method="get">
+        <p><input type="submit" name="back" value="Back"/></p>
+    </form>
+    <form action="/guestbook/${entry.id}" method="post">
+        <p><input type="submit" name="delete" value="Delete"/></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Guestbook</title>
+</head>
+<body>
+    @Repeat(items=entries, var="entry")
+    <p><a href="/guestbook/${entry.id}">${entry.id} on ${entry.date}</a></p>
+
+    <form action="/guestbook" method="post">
+        Name: <input name="newEntry.name" type="text"/><br/>
+        Text: <input name="newEntry.text" type="text"/>
+        <input type="submit" value="save" name="save"/>
+    </form>
+</body>
+</html>
