@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="google-sidebricks-sample.iws" />
+    <ignored path="google-sitebricks-sample.iws" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
@@ -55,7 +55,7 @@
     <ui_properties />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="google-sidebricks-sample" />
+    <favorites_list name="google-sitebricks-sample" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -78,7 +78,7 @@
         </entry>
       </file>
       <file leaf-file-name="SampleListener.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/linsin/sample/sidebricks/listener/SampleListener.java">
+        <entry file="file://$PROJECT_DIR$/src/de/linsin/sample/sitebricks/listener/SampleListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="58" selection-start="457" selection-end="457" vertical-scroll-proportion="0.23045267">
               <folding>
@@ -123,39 +123,39 @@
     <subPane>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -165,15 +165,15 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -187,15 +187,15 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="google-sidebricks-sample" />
+          <option name="myItemId" value="google-sitebricks-sample" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -418,7 +418,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/linsin/sample/sidebricks/listener/SampleListener.java">
+    <entry file="file://$PROJECT_DIR$/src/de/linsin/sample/sitebricks/listener/SampleListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="58" selection-start="457" selection-end="457" vertical-scroll-proportion="0.23045267">
           <folding>

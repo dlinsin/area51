@@ -288,11 +288,11 @@
     </group>
   </component>
   <component name="ProjectDetails">
-    <option name="projectName" value="google-sidebricks-sample" />
+    <option name="projectName" value="google-sitebricks-sample" />
   </component>
   <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
-    <option name="state" value="project:///Users/dlinsin/Development/area51/google-sidebricks-sample/google-sidebricks-sample.ipr" />
+    <option name="state" value="project:///Users/dlinsin/Development/area51/google-sitebricks-sample/google-sitebricks-sample.ipr" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
@@ -369,7 +369,7 @@
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="libraryTable">
-    <library name="google-sidebricks">
+    <library name="google-sitebricks">
       <CLASSES>
         <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/dist/google-sitebricks-0.7.jar!/" />
         <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/lib/guice-2.0.jar!/" />

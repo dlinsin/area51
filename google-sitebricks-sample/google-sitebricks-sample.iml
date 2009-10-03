@@ -10,7 +10,7 @@
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
         <building>
-          <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/out/exploded/google-sidebricks-sampleWeb" />
+          <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/out/exploded/google-sitebricks-sampleWeb" />
           <setting name="EXPLODED_ENABLED" value="true" />
           <setting name="JAR_URL" value="file://" />
           <setting name="JAR_ENABLED" value="false" />
@@ -21,7 +21,7 @@
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/classes" />
           </containerElement>
-          <containerElement type="library" name="google-sidebricks" level="project">
+          <containerElement type="library" name="google-sitebricks" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib" />
           </containerElement>
@@ -45,7 +45,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="google-sidebricks" level="project" />
+    <orderEntry type="library" name="google-sitebricks" level="project" />
   </component>
 </module>
 
