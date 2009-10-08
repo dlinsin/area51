@@ -21,6 +21,7 @@ package de.linsin.alterego.notification;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.PostMethod;
+import org.apache.commons.httpclient.util.EncodingUtil;
 
 import java.util.logging.Logger;
 
@@ -32,11 +33,13 @@ import java.util.logging.Logger;
 public class AppNotificationService implements NotificationService {
     protected final Logger logger = Logger.getLogger(AppNotificationService.class.getName());
     private final String credentials;
-    private static final String USER_CREDENTIALS = "user_credentials";
-    private static final String NOTIFICATION_MESSAGE = "notification[message]";
-    private static final String NOTIFICATION_TITLE = "notification[title]";
-    private static final String MESSAGE_LEVEL = "message_level";
-    private static final String URL = "https://www.appnotifications.com/account/notifications.xml";
+    public static final String USER_CREDENTIALS = "user_credentials";
+    public static final String NOTIFICATION_MESSAGE = "notification[message]";
+    public static final String NOTIFICATION_TITLE = "notification[title]";
+    public static final String MESSAGE_LEVEL = "message_level";
+    public static final String URL = "https://www.appnotifications.com/account/notifications.xml";
+    public static final String HTTP_USERAGENT = "http.useragent";
+    private static final String CHARSET = "ISO-8859-1";
 
     public AppNotificationService(String argCredentials) {
         credentials = argCredentials;
@@ -72,18 +75,22 @@ public class AppNotificationService implements NotificationService {
 
     HttpClient setUp() {
         HttpClient client = new HttpClient();
-        client.getParams().setParameter("http.useragent", "IRC Bot");
+        client.getParams().setParameter(HTTP_USERAGENT, "IRC Bot");
         return client;
     }
 
-    private PostMethod setUp(String argTitle, String argMessage) {
+    PostMethod setUp(String argTitle, String argMessage) {
         PostMethod method = new PostMethod(URL);
 
         method.addParameter(USER_CREDENTIALS, credentials);
-        method.addParameter(NOTIFICATION_MESSAGE, argMessage);
-        method.addParameter(NOTIFICATION_TITLE, argTitle);
+        method.addParameter(NOTIFICATION_MESSAGE, encode(argMessage));
+        method.addParameter(NOTIFICATION_TITLE, encode(argTitle));
         method.addParameter(MESSAGE_LEVEL, "2");
         return method;
+    }
+
+    private String encode(String argMessage) {
+        return EncodingUtil.getString(argMessage.getBytes(), CHARSET);
     }
 
 }

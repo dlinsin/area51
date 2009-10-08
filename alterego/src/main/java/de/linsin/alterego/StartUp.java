@@ -30,11 +30,11 @@ import java.io.IOException;
 public class StartUp {
 
     public static void main(String[] args) throws IrcException, IOException {
-        Bot bot = new Bot("alterego", "dlinsin", "dlinsin");
-        bot.connect("midletspiele.de");
-        bot.joinChannel("#synyx");
-//        bot.connect("irc.freenode.net");
-//        bot.joinChannel("#dlinsin");
+        Bot bot = new Bot("alterego1", "dlinsin", "david");
+//        bot.connect("midletspiele.de");
+//        bot.joinChannel("#synyx");
+        bot.connect("irc.freenode.net");
+        bot.joinChannel("#dlinsin");
 
         bot.addNotificationService(new AppNotificationService(System.getProperty("credentials")));
         

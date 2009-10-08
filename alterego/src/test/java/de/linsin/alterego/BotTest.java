@@ -18,11 +18,10 @@
 package de.linsin.alterego;
 
 import de.linsin.alterego.notification.NotificationService;
-import static org.easymock.EasyMock.reset;
-import static org.easymock.EasyMock.createMock;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import static org.easymock.classextension.EasyMock.*;
 
 /**
  * Testing {@link Bot}
@@ -36,7 +35,8 @@ public class BotTest {
     @Before
     public void setUp() {
         mockNotificationService = createMock(NotificationService.class);
-        
+        classUnderTest = new Bot("", "", "");
+        classUnderTest.addNotificationService(mockNotificationService);
     }
 
     @After
@@ -45,7 +45,18 @@ public class BotTest {
     }
 
     @Test
-    public void test_on_message() {
+    public void test_on_message_over_batch_size() {
+        expect(mockNotificationService.notify((String)anyObject(), (String)anyObject())).andReturn(true);
+        replay(mockNotificationService);
+        for (int i = 0; i <= Bot.MESSAGE_BATCH_SIZE; i++) {
+            classUnderTest.onMessage("", "", "", "", "test");
+        }
+        verify(mockNotificationService);
+    }
+
+    @Test
+    public void test_on_message_timer_exceeded() {
+
     }
 
     @Test

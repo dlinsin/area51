@@ -37,13 +37,13 @@ import java.util.logging.Logger;
 public class Bot extends PircBot {
     protected final Logger logger = Logger.getLogger(Bot.class.getName());
     private final String alterEgoName;
-    private boolean silentMode;
+    private boolean silentMode = false;
     private Collection<NotificationService> notificationServices;
 
     private Collection<String> messages;
     private Timer messagesTimer;
-    private static final int MESSAGE_BATCH_SIZE = 20;
-    private static final int MESSAGE_BATCH_DELAY_MS = 60000;
+    static final int MESSAGE_BATCH_SIZE = 20;
+    static final int MESSAGE_BATCH_DELAY_MS = 60000;
 
     public Bot(String argBotName, String argBotLogin, String argAlterEgoName) {
         super.setName(argBotName);
