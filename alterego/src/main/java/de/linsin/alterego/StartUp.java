@@ -17,24 +17,24 @@
 
 package de.linsin.alterego;
 
+import java.io.IOException;
+
 import de.linsin.alterego.notification.AppNotificationService;
 import org.jibble.pircbot.IrcException;
 
-import java.io.IOException;
-
 /**
- * TODO document
+ * Starts bot with defaults
  *
  * @author David Linsin - linsin@synyx.de
  */
 public class StartUp {
 
     public static void main(String[] args) throws IrcException, IOException {
-        Bot bot = new Bot("alterego1", "dlinsin", "david");
-//        bot.connect("midletspiele.de");
-//        bot.joinChannel("#synyx");
-        bot.connect("irc.freenode.net");
-        bot.joinChannel("#dlinsin");
+        Bot bot = new Bot("alterego", "dlinsin", "dlinsin");
+        bot.connect("midletspiele.de");
+        bot.joinChannel("#synyx");
+//        bot.connect("irc.freenode.net");
+//        bot.joinChannel("#dlinsin");
 
         bot.addNotificationService(new AppNotificationService(System.getProperty("credentials")));
         
