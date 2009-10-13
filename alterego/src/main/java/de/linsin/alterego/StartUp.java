@@ -33,7 +33,6 @@ public class StartUp {
         Bot bot = new Bot("alterego", "dlinsin", "dlinsin");
         bot.connect("midletspiele.de");
         bot.joinChannel("#synyx");
-//        bot.connect("irc.freenode.net");
 //        bot.joinChannel("#dlinsin");
 
         bot.addNotificationService(new AppNotificationService(System.getProperty("credentials")));

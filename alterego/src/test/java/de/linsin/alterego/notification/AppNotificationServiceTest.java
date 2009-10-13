@@ -17,18 +17,17 @@
 
 package de.linsin.alterego.notification;
 
+import java.io.IOException;
+
 import static de.linsin.alterego.notification.AppNotificationService.*;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
-import org.apache.commons.httpclient.util.EncodingUtil;
 import static org.easymock.classextension.EasyMock.*;
 import org.junit.After;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.io.IOException;
 
 /**
  * Testing {@link AppNotificationService}
@@ -62,8 +61,8 @@ public class AppNotificationServiceTest {
         String title = "mytitle";
         PostMethod method = classUnderTest.setUp(title, msg);
         assertEquals(MYCREDS, method.getParameter(USER_CREDENTIALS).getValue());
-        assertEquals(EncodingUtil.getString(msg.getBytes(), "ISO-8859-1"), method.getParameter(NOTIFICATION_MESSAGE).getValue());
-        assertEquals(EncodingUtil.getString(title.getBytes(), "ISO-8859-1"), method.getParameter(NOTIFICATION_TITLE).getValue());
+        assertEquals(msg, method.getParameter(NOTIFICATION_MESSAGE).getValue());
+        assertEquals(title, method.getParameter(NOTIFICATION_TITLE).getValue());
         assertEquals("2", method.getParameter(MESSAGE_LEVEL).getValue());
     }
 

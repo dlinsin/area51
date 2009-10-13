@@ -17,6 +17,8 @@
 
 package de.linsin.alterego;
 
+import java.io.UnsupportedEncodingException;
+
 import de.linsin.alterego.notification.NotificationService;
 import org.junit.After;
 import org.junit.Before;
@@ -33,7 +35,7 @@ public class BotTest {
     private NotificationService mockNotificationService;
 
     @Before
-    public void setUp() {
+    public void setUp() throws UnsupportedEncodingException {
         mockNotificationService = createMock(NotificationService.class);
         classUnderTest = new Bot("", "", "");
         classUnderTest.addNotificationService(mockNotificationService);

@@ -17,10 +17,6 @@
 
 package de.linsin.alterego;
 
-import de.linsin.alterego.notification.NotificationService;
-import org.jibble.pircbot.PircBot;
-import org.jibble.pircbot.User;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -28,6 +24,11 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Logger;
+import java.io.UnsupportedEncodingException;
+
+import de.linsin.alterego.notification.NotificationService;
+import org.jibble.pircbot.PircBot;
+import org.jibble.pircbot.User;
 
 /**
  * Bot which uses a {@link NotificationService} implementation to notify other systems
@@ -44,14 +45,16 @@ public class Bot extends PircBot {
     private Timer messagesTimer;
     static final int MESSAGE_BATCH_SIZE = 20;
     static final int MESSAGE_BATCH_DELAY_MS = 60000;
+    public static final String CHARSET = "UTF-8";
 
-    public Bot(String argBotName, String argBotLogin, String argAlterEgoName) {
+    public Bot(String argBotName, String argBotLogin, String argAlterEgoName) throws UnsupportedEncodingException {
         super.setName(argBotName);
         super.setLogin(argBotLogin);
         alterEgoName = argAlterEgoName;
         notificationServices = new ArrayList<NotificationService>();
         messages = new ArrayList<String>();
         messagesTimer = new Timer();
+        setEncoding(CHARSET);
     }
 
     public void addNotificationService(NotificationService argService) {

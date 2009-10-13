@@ -18,12 +18,11 @@
 package de.linsin.alterego.notification;
 
 
+import java.util.logging.Logger;
+
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.PostMethod;
-import org.apache.commons.httpclient.util.EncodingUtil;
-
-import java.util.logging.Logger;
 
 /**
  * Notifies AppNotification (appnotifications.com) by Http
@@ -39,7 +38,6 @@ public class AppNotificationService implements NotificationService {
     public static final String MESSAGE_LEVEL = "message_level";
     public static final String URL = "https://www.appnotifications.com/account/notifications.xml";
     public static final String HTTP_USERAGENT = "http.useragent";
-    private static final String CHARSET = "ISO-8859-1";
 
     public AppNotificationService(String argCredentials) {
         credentials = argCredentials;
@@ -81,16 +79,12 @@ public class AppNotificationService implements NotificationService {
 
     PostMethod setUp(String argTitle, String argMessage) {
         PostMethod method = new PostMethod(URL);
+        method.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
 
         method.addParameter(USER_CREDENTIALS, credentials);
-        method.addParameter(NOTIFICATION_MESSAGE, encode(argMessage));
-        method.addParameter(NOTIFICATION_TITLE, encode(argTitle));
+        method.addParameter(NOTIFICATION_MESSAGE, argMessage);
+        method.addParameter(NOTIFICATION_TITLE, argTitle);
         method.addParameter(MESSAGE_LEVEL, "2");
         return method;
     }
-
-    private String encode(String argMessage) {
-        return EncodingUtil.getString(argMessage.getBytes(), CHARSET);
-    }
-
 }
