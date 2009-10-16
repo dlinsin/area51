@@ -61,7 +61,7 @@ public class AppNotificationServiceTest {
         String title = "mytitle";
         PostMethod method = classUnderTest.setUp(title, msg);
         assertEquals(MYCREDS, method.getParameter(USER_CREDENTIALS).getValue());
-        assertEquals(msg, method.getParameter(NOTIFICATION_MESSAGE).getValue());
+        assertEquals(msg, method.getParameter(NOTIFICATION_LONG_MESSAGE).getValue());
         assertEquals(title, method.getParameter(NOTIFICATION_TITLE).getValue());
         assertEquals("2", method.getParameter(MESSAGE_LEVEL).getValue());
     }

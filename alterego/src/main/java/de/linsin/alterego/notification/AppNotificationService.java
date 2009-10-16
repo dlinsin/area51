@@ -33,7 +33,7 @@ public class AppNotificationService implements NotificationService {
     protected final Logger logger = Logger.getLogger(AppNotificationService.class.getName());
     private final String credentials;
     public static final String USER_CREDENTIALS = "user_credentials";
-    public static final String NOTIFICATION_MESSAGE = "notification[message]";
+    public static final String NOTIFICATION_LONG_MESSAGE = "notification[long_message]";
     public static final String NOTIFICATION_TITLE = "notification[title]";
     public static final String MESSAGE_LEVEL = "message_level";
     public static final String URL = "https://www.appnotifications.com/account/notifications.xml";
@@ -82,7 +82,7 @@ public class AppNotificationService implements NotificationService {
         method.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
 
         method.addParameter(USER_CREDENTIALS, credentials);
-        method.addParameter(NOTIFICATION_MESSAGE, argMessage);
+        method.addParameter(NOTIFICATION_LONG_MESSAGE, argMessage);
         method.addParameter(NOTIFICATION_TITLE, argTitle);
         method.addParameter(MESSAGE_LEVEL, "2");
         return method;
