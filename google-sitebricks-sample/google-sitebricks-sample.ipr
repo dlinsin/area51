@@ -374,6 +374,8 @@
         <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/dist/google-sitebricks-0.7.jar!/" />
         <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/lib/guice-2.0.jar!/" />
         <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/lib/guice-servlet-2.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/google-collect-1.0-rc2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/aopalliance.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
