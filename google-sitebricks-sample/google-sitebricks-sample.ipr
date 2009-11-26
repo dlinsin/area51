@@ -132,7 +132,12 @@
         <inspection_tool class="ELValidationInJSP" level="INFO" enabled="false" />
       </profile>
     </profiles>
-    <list size="0" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="SERVER PROBLEM" />
+      <item index="1" class="java.lang.String" itemvalue="INFO" />
+      <item index="2" class="java.lang.String" itemvalue="WARNING" />
+      <item index="3" class="java.lang.String" itemvalue="ERROR" />
+    </list>
   </component>
   <component name="JavacSettings">
     <option name="DEBUGGING_INFO" value="true" />
@@ -372,10 +377,10 @@
     <library name="google-sitebricks">
       <CLASSES>
         <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/dist/google-sitebricks-0.7.jar!/" />
-        <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/lib/guice-2.0.jar!/" />
-        <root url="jar:///Users/dlinsin/Development/area51/google-sitebricks/lib/guice-servlet-2.0.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/google-collect-1.0-rc2.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/aopalliance.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/guice-2.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/guice-servlet-2.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>

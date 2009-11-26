@@ -15,15 +15,16 @@
 
 package de.linsin.sample.sitebricks.resource;
 
+import java.util.Date;
+import java.util.List;
+import java.text.SimpleDateFormat;
+
+import com.google.inject.Inject;
 import com.google.sitebricks.At;
 import com.google.sitebricks.http.Get;
 import com.google.sitebricks.http.Post;
-import com.google.inject.Inject;
 import de.linsin.sample.sitebricks.dao.EntryDao;
 import de.linsin.sample.sitebricks.domain.Entry;
-
-import java.util.List;
-import java.util.Date;
 
 /**
  * Resource which represents a list of {@link Entry} instances
@@ -37,6 +38,13 @@ public class Guestbook {
 
     @Inject
     private EntryDao entryDao;
+
+    public Guestbook(EntryDao argEntryDao) {
+        entryDao = argEntryDao;
+    }
+
+    public Guestbook() {
+    }
 
     public List<Entry> getEntries() {
         return entries;
@@ -60,5 +68,9 @@ public class Guestbook {
 
     public void setNewEntry(Entry argNewEntry) {
         newEntry = argNewEntry;
+    }
+
+    public String getTime() {
+        return new SimpleDateFormat().format(new Date());
     }
 }

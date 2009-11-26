@@ -44,9 +44,9 @@ public class GuestbookEntry {
     }
 
     @Post
-    public String delete(@Named("id") String argId) {
+    public Guestbook delete(@Named("id") String argId) {
         load(argId);
         entryDao.delete(entry);
-        return "/sample/guestbook";
+        return new Guestbook(entryDao);
     }
 }

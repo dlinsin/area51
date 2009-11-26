@@ -3,6 +3,7 @@
     <title>Guestbook</title>
 </head>
 <body>
+    <h2>Welcome to my guestbook, the time is now ${time}.</h2>
     @Repeat(items=entries, var="entry")
     <p><a href="/guestbook/${entry.id}">${entry.id} on ${entry.date}</a></p>
 
