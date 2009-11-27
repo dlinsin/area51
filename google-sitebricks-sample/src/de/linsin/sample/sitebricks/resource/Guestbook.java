@@ -15,9 +15,9 @@
 
 package de.linsin.sample.sitebricks.resource;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.text.SimpleDateFormat;
 
 import com.google.inject.Inject;
 import com.google.sitebricks.At;

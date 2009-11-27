@@ -5,11 +5,9 @@
 <body>
     <p>${entry.name} wrote on ${entry.date}</p>
     <p>${entry.text}</p>
-    <form action="/guestbook" method="get">
-        <p><input type="submit" name="back" value="Back"/></p>
-    </form>
-    <form action="/guestbook/${entry.id}" method="post">
-        <p><input type="submit" name="delete" value="Delete"/></p>
-    </form>
+    <form action="/guestbook/${entry.id}" method="post"><input type="submit" name="delete" value="Delete this entry"/></form>
+    <form action="/guestbook" method="get"><input type="submit" name="back" value="Go Back"/></form>
+    @Navigation(current=entry)
+    <p/>
 </body>
 </html>

@@ -15,9 +15,9 @@
 
 package de.linsin.sample.sitebricks.domain;
 
-import de.linsin.sample.sitebricks.resource.Guestbook;
-
 import java.util.Date;
+
+import de.linsin.sample.sitebricks.resource.Guestbook;
 
 /**
  * Entry in a {@link Guestbook}
