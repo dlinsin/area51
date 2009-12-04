@@ -39,19 +39,51 @@ public class GuestbookNavigation {
         current = argCurrent;
     }
 
+    /**
+     * @return a {@link Entry} instance which is the next in line, null if there is no next
+     */
     public Entry getNext() {
-        return entryDao.read(current.getId()+1);
+        for (Entry entry : entryDao.readAll()) {
+            if (entry.getId() > current.getId()) {
+                return entry;
+            }
+        }
+        return null;
     }
 
+    /**
+     * @return a {@link Entry} instance which is the previous in line, null if there is no previous
+     */
     public Entry getPrevious() {
-        return entryDao.read(current.getId()-1);
+        Entry previous = null;
+        for (Entry entry : entryDao.readAll()) {
+            if (entry.getId().equals(current.getId()) && previous != null) {
+                return previous;
+            }
+            previous = entry;
+        }
+        return null;
     }
 
+    /**
+     * @return true is there is a next {@link Entry} in line, else false
+     */
     public boolean isNextExists() {
-        return current.getId()+1 < entryDao.readAll().size();
+        return getNext() != null;
     }
 
+    /**
+     * @return true if there is a previous {@link Entry} in line, else false
+     */
     public boolean isPreviousExists() {
-        return current.getId()-1 > 0;
+        return getPrevious() != null;
+    }
+
+    public EntryDao getEntryDao() {
+        return entryDao;
+    }
+
+    public void setEntryDao(EntryDao argEntryDao) {
+        entryDao = argEntryDao;
     }
 }

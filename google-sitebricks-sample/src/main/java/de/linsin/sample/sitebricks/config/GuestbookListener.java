@@ -26,7 +26,6 @@ import com.google.inject.servlet.GuiceServletContextListener;
  */
 public class GuestbookListener extends GuiceServletContextListener {
     protected Injector getInjector() {
-        System.out.println("TRUE = " + true);
         return Guice.createInjector(new GuestbookSitebricksModule());
     }
 }

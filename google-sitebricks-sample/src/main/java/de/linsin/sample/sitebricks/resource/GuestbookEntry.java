@@ -49,4 +49,12 @@ public class GuestbookEntry {
         entryDao.delete(entry);
         return new Guestbook(entryDao);
     }
+
+    public EntryDao getEntryDao() {
+        return entryDao;
+    }
+
+    public void setEntryDao(EntryDao argEntryDao) {
+        entryDao = argEntryDao;
+    }
 }

@@ -70,6 +70,14 @@ public class Guestbook {
         newEntry = argNewEntry;
     }
 
+    public EntryDao getEntryDao() {
+        return entryDao;
+    }
+
+    public void setEntryDao(EntryDao argEntryDao) {
+        entryDao = argEntryDao;
+    }
+
     public String getTime() {
         return new SimpleDateFormat().format(new Date());
     }
