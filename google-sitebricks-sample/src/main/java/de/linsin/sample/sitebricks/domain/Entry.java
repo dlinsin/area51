@@ -15,6 +15,7 @@
 
 package de.linsin.sample.sitebricks.domain;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import de.linsin.sample.sitebricks.resource.Guestbook;
@@ -57,8 +58,8 @@ public class Entry {
         text = argText;
     }
 
-    public Date getDate() {
-        return date;
+    public String getDate() {
+        return new SimpleDateFormat().format(new Date());
     }
 
     public void setDate(Date argDate) {

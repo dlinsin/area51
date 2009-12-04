@@ -15,11 +15,13 @@
 
 package de.linsin.sample.sitebricks.dao;
 
-import de.linsin.sample.sitebricks.domain.Entry;
-
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
+
+import de.linsin.sample.sitebricks.domain.Entry;
 
 /**
  * Holds stuff in memory and publishs a dummy list on creation
@@ -30,9 +32,13 @@ public class SimpleEntryDao implements EntryDao {
     private final List<Entry> entries;
 
     public SimpleEntryDao() {
+        List<String> sampleNames = Arrays.asList("david", "sutini", "marc", "ollie", "thomas", "achim");
+        List<String> sampleEntries = Arrays.asList("Hey it's me, how are you?", "Hi, just came bye to say hello!", "What's going on, haven't heard from you!");
+        long dateSeed = 1259941076191L;
+        Random random = new Random();
         entries = new ArrayList<Entry>();
         for (int i = 0; i <= 10; i++) {
-          entries.add(new Entry(i, new Date(), "dlinsin" + i, "This is sample # " + i));
+            entries.add(new Entry(i, new Date(dateSeed + random.nextInt()), sampleNames.get(random.nextInt(sampleNames.size()-1)), sampleEntries.get(random.nextInt(sampleEntries.size()-1))));
       }
     }
 

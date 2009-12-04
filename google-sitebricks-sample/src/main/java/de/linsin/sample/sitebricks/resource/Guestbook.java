@@ -15,7 +15,6 @@
 
 package de.linsin.sample.sitebricks.resource;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -76,9 +75,5 @@ public class Guestbook {
 
     public void setEntryDao(EntryDao argEntryDao) {
         entryDao = argEntryDao;
-    }
-
-    public String getTime() {
-        return new SimpleDateFormat().format(new Date());
     }
 }
