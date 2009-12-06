@@ -4,12 +4,12 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 <body>
+    <p><a href="/guestbook">go back</a></p>
     <h3>This is entry #${entry.id}</h3>
     <p>${entry.text}</p>
     <p class="small">written by ${entry.name} on ${entry.date}</p>
     <hr/>
     <form action="/guestbook/${entry.id}" method="post"><input type="submit" name="delete" value="Delete this entry"/></form>
-    <form action="/guestbook" method="get"><input type="submit" name="back" value="Go Back"/></form>
     <hr/>
     @Navigation(current=entry)
     <p/>
